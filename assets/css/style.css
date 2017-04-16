@@ -1,0 +1,250 @@
+
+html, body{
+	padding: 0;
+	margin: 0;
+	background-image: url(../images/triangular.png);	
+	font-family: 'Roboto', sans-serif;
+	background-repeat: repeat;
+}
+.container{
+	width: 960px;
+	margin: auto;
+}
+/*nav bar layout*/
+.nav{
+	background: #646473;
+	margin-top: 0;
+	height: 100px;
+	margin-bottom: 5%;
+	border-bottom: 4px solid black;
+}
+/*main logo style*/
+.logo{
+	font-family: 'Press Start 2P', cursive;
+	background: #babac0;
+    float: left;
+    margin-left: 10%;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 35px;
+    padding: 0 2%;
+}
+/*logo animation on home page*/
+#home-logo{
+	animation-name: logoleft;
+	animation-duration: 1s;
+	-webkit-animation-name: logoleft;
+	-webkit-animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+@-webkit-keyframes logoleft {
+	from{margin-left: -500px;}
+	to{margin-left: 10%;}
+}
+@keyframes logoleft {
+	from{margin-left: -500px;}
+	to{margin-left: 10%;}
+}
+/*nav link style*/
+ul{
+	float: right;
+	margin-top: 30px;
+	margin-right: 10%;
+	padding-left: 0;
+	font-family: 'Oswald', sans-serif;
+
+}
+li{
+	list-style: none;
+	display: inline;
+	font-size: 27px;
+	margin: 0 15px;
+}
+li a{
+	color: black;
+	text-decoration: none;
+}
+/*main content box(about me/portfolio/contact form*/
+.content{
+	width: 650px ;
+	float: left;
+	background: lightgray;
+	margin-right: 2%;
+	padding-bottom: 20px;
+	margin-bottom: 100px;
+
+}
+.content h1{
+	font-size: 38px;
+	margin: 20px 20px;
+	font-family: 'VT323', monospace;
+
+}
+.content p{
+	font-size: 20px;
+	padding: 10px 20px;
+}
+.content a{
+	color: black;
+	text-decoration: none;
+	font-size: 26px;
+}
+/*about me image style*/
+#img-me{
+	float: left;
+	margin-right: 17px;
+	height: 163px;
+	margin-top: 10px;
+	border-radius: 5%;
+	box-shadow: 10px 10px 5px #888888;
+	margin-left: 20px;
+}
+
+/*style for lines under contac and content boxes*/
+hr{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+/*style for contact box*/
+.contact{
+	text-align: center;
+	width: 270px;
+	background: lightgray;
+	padding-bottom: 20px;
+	float: left;
+}
+.contact img{
+	width: 75px;
+	height: 75px;
+}
+/*stick footer settings*/
+.footer{
+	clear: both;
+	border-top: 6px solid gray;
+	background: black;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	color: white;
+}
+.footer p{
+	padding: 20px 0;
+}
+
+.contact hr{
+	width: 80%;
+	margin:auto;
+	margin-bottom: 10px;
+
+}
+.contact h2{
+	    font-size: 24px;
+	    padding: 15px 0;
+}
+/*style for all forms*/
+input{
+	    background: #eaeaea;
+	    width: 100%;
+	    font-size: 20px;
+}
+#message{
+	width: 100%;
+	height: 300px;
+	background: #eaeaea;
+	resize: none;
+}
+#submit{
+	width: 150px;
+	background: #babac0;
+    border: 0;
+}
+form{
+	width: 90%;
+	margin: 0 auto;
+}
+/*styles for portfolio content*/
+.thumbnail-1{
+	float: left;
+}
+.thumbnail-2{
+	float: right;
+}
+.row{
+	clear: both;
+}
+.thumbnail{
+	width: 250px;
+	margin: 0 20px;
+}
+.thumbnail h2{
+	font-size: 12px;
+	position: relative;
+    top: 160px;
+    background: #babac0;
+    text-align: center;
+    padding: 4% 0;
+    transition-duration: 1s;
+}
+.thumbnail img{
+	transition-duration: 1s;
+	width: 250px;
+
+}
+/*adds rounded corners to stac overflow logo to match others*/
+#sto{
+	border-radius: 7%;
+}
+/*adds underline while links are hovered*/
+a:hover {
+	text-decoration: underline;
+}
+/*hover settings for portfolio images*/
+.thumbnail-1 h2:hover +img{
+	box-shadow: 5px 5px 5px #888888;
+	margin-left: -5px;
+
+}
+.thumbnail-1 h2:hover{
+	margin-left: -5px;
+	margin-right: 5px;
+
+}
+
+.thumbnail-2 h2:hover +img{
+	box-shadow: 5px 5px 5px #888888;
+	margin-left: -5px;
+
+}
+.thumbnail-2 h2:hover{
+	margin-right: 5px;
+	margin-left: -5px;
+
+}
+/*settings for portfolio typing animation*/
+#type{
+	width: 160px;
+	animation-name: bob;
+	animation-duration: 3.5s;
+	animation-timing-function: steps(10);
+	overflow: hidden;
+}
+
+#portfolio{
+	margin-right: 0;
+	max-height: 38px;
+	animation: blink .75s 10;
+}
+
+
+@keyframes blink{
+	from{border-right: 5px solid black; }
+	to{ border: none; }
+}
+@keyframes bob{
+	0%{width: 0;}
+	100%{width: 160px;}
+}
