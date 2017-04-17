@@ -248,3 +248,103 @@ a:hover {
 	0%{width: 0;}
 	100%{width: 160px;}
 }
+
+@media  screen and (max-width: 980px){
+	.container{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.logo{
+		font-size: 20px;
+	}
+	li{
+		font-size: 20px;
+		margin: 0 10px;
+	}
+	.content{
+		width: 55%;
+	}
+	.content p{
+		line-height: 2;
+
+	}
+	#img-me{
+		height: 380px;
+		margin: 10px 17px 10px 20px;
+
+	}
+	.contact{
+		float: right;
+	}
+	.thumbnail{
+		float: none;
+		width: 90%;
+	}
+	.thumbnail img{
+		width: 100%;
+	}
+	.thumbnail h2{
+		top: 250px;
+	}
+}
+
+@media  screen and (max-width: 768px){
+	.content{
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.contact{
+		width: 100%;
+   		margin-top: 20px;
+    	margin-bottom: 75px;
+	}
+	.thumbnail-1{
+		float: left;
+	}
+	.thumbnail-2{
+		float: right;
+	}
+	.thumbnail{
+		width: 40%;
+	}
+	.thumbnail h2{
+		top: 180px;
+	}
+}
+
+@media  screen and (max-width: 640px){
+	.logo{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	#home-logo{
+		animation-duration: 0s;
+	}
+	ul{
+		float: none;
+		text-align: center;
+		margin: 0;
+		background: gray;
+		padding-bottom: 15px;
+	}
+	.nav{
+		margin-bottom: 50px;
+	}
+	li{
+		margin: 0 40px;
+	}
+	#img-me{
+		width: 90%;
+	}
+	.thumbnail{
+		float: none;
+		width: 90%;
+	}
+	.thumbnail img{
+		width: 100%;
+	}
+	.thumbnail h2{
+		top: 310px;
+	}
+}
